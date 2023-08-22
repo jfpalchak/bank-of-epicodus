@@ -16,9 +16,13 @@ Code:
 Expected Output: Account {balance: 500}
 
 Test 3: "Constructor function creates object of type Account with name property."
-Code: const account = new Account("Joe");
+Code: 
+    const name = "Joe";
+    const initialDeposit = 500;
+    const account = new Account(name, initialDeposit);
+    account;
 Expected Output: 
-    Account {name: "Joe"}
+    Account {name: "Joe", balance: 500}
 ```
 
 **Description:** Account.prototype.deposit()

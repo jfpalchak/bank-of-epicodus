@@ -2,15 +2,16 @@ function BankBook() {
     this.accounts = {}
 }
 
-function Account(initialDeposit) {
+function Account(name, initialDeposit) {
+    this.ownerName = name;
     this.balance = initialDeposit;
 }
 
-Account.prototype.deposit() = function(depositAmount) {
+Account.prototype.deposit = function(depositAmount) {
     this.balance += depositAmount;
 }
 
-Account.prototype.withdraw() = function(withdrawAmount) {
+Account.prototype.withdraw = function(withdrawAmount) {
     this.balance -= withdrawAmount;
 }
 
