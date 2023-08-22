@@ -2,6 +2,6 @@ function Account(initialDeposit) {
     this.balance = initialDeposit;
 }
 
-Account.prototype.deposit() = function() {
-    return this.balance;
+Account.prototype.deposit() = function(depositAmount) {
+    this.balance += depositAmount;
 }
