@@ -78,10 +78,13 @@ Expected Output: {}
 
 **Description** BankBook.prototype.addAccount()
 ```javascript
+
 Test 1: "addAccount method adds an Account object to BankBook account property."
 Code:
-    const account = new Account(500);
+    const account = new Account("joe", 500);
     const epicodusBank = new BankBook();
     epicodusBank.addAccount(account);
-Expected Output:     
+Expected Output: 
+
+
 ```
