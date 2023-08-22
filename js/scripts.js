@@ -1,3 +1,7 @@
+function BankBook() {
+    this.accounts = {}
+}
+
 function Account(initialDeposit) {
     this.balance = initialDeposit;
 }
