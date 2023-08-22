@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/scripts.js"></script>
+    <title>Bank of Epicodus</title>
+</head>
+<body>
+    <h1>Welcome to the Bank of Epicodus!</h1>
+
+    <div class="create-account">
+        <form id="create-account-form">
+            <h3>Register New Account:</h2>
+            <label for="account-name">Name:</label>
+            <br />
+            <input id="account-name" type="text" name="account-name">
+            <br />
+            <label for="account-initial-deposit">Initial Deposit:</label>
+            <br />
+            <input id="account-initial-deposit" type="number" name="account-initial-deposit">
+            <br />
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+
+    <div class="deposit-or-withdraw">
+        <form id="account-balance-update-form">
+            <h3>Deposit or Withdraw Funds:</h2>
+                <label for="account-deposit">Deposit:</label>
+                <br />
+                <input id="account-deposit" type="number" name="account-deposit">
+                <br />
+                <label for="account-withdraw">Withdraw:</label>
+                <br />
+                <input id="account-withdraw" type="number" name="account-withdraw">
+                <br />
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="current-balance">
+        <h3>Current Balance:</h3>
+        <p></p>
+    </div>
+    
+</body>
+</html>

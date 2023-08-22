@@ -51,3 +51,17 @@ Code:
     account.deposit(100);
 Expected Output: 400
 ```
+**Description** BankBook()
+```javascript
+Test 1: "Constructor function creates empty object of type BankBook."
+Code:
+    const epicodusBank = new BankBook();
+    epicodusBank;
+Expected Output: BankBook {}
+
+Test 2: "Constructor function creates object of type BankBook, which has an empty property called accounts."
+Code:
+    const epicodusBank = new BankBook();
+    epicodusBank.accounts;
+Expected Output: {}
+```
