@@ -14,6 +14,11 @@ Code:
     const account = new Account(initialDeposit);
     account;
 Expected Output: Account {balance: 500}
+
+Test 3: "Constructor function creates object of type Account with name property."
+Code: const account = new Account("Joe");
+Expected Output: 
+    Account {name: "Joe"}
 ```
 
 **Description:** Account.prototype.deposit()
@@ -51,6 +56,7 @@ Code:
     account.deposit(100);
 Expected Output: 400
 ```
+
 **Description** BankBook()
 ```javascript
 Test 1: "Constructor function creates empty object of type BankBook."
@@ -64,4 +70,14 @@ Code:
     const epicodusBank = new BankBook();
     epicodusBank.accounts;
 Expected Output: {}
+```
+
+**Description** BankBook.prototype.addAccount()
+```javascript
+Test 1: "addAccount method adds an Account object to BankBook account property."
+Code:
+    const account = new Account(500);
+    const epicodusBank = new BankBook();
+    epicodusBank.addAccount(account);
+Expected Output:     
 ```
